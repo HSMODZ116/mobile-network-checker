@@ -1,0 +1,60 @@
+body {
+    background: #050505;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    color: white;
+    font-family: 'Inter', sans-serif;
+}
+.bg-glow {
+    position: absolute;
+    width: 300px; height: 300px;
+    background: #4f46e5;
+    filter: blur(150px);
+    z-index: -1;
+    opacity: 0.4;
+}
+.glass-container {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(15px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 2rem;
+    border-radius: 20px;
+    width: 350px;
+    text-align: center;
+}
+.header i { font-size: 2rem; color: #818cf8; margin-bottom: 10px; }
+input {
+    width: 100%;
+    padding: 12px;
+    margin: 15px 0;
+    border-radius: 10px;
+    border: none;
+    background: rgba(255, 255, 255, 0.1);
+    color: white;
+    outline: none;
+}
+button {
+    width: 100%;
+    padding: 12px;
+    border-radius: 10px;
+    border: none;
+    background: #4f46e5;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+.result-card {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    background: rgba(255, 255, 255, 0.05);
+    padding: 15px;
+    border-radius: 15px;
+}
+#logo { width: 50px; border-radius: 8px; }
+.hidden { display: none; }
+.error { color: #f87171; font-size: 14px; margin-top: 10px; }

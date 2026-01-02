@@ -1,1 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NetCheck Pro</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="bg-glow"></div>
+    <div class="glass-container">
+        <div class="header">
+            <i class="fas fa-tower-broadcast"></i>
+            <h1>Network Checker</h1>
+        </div>
+        
+        <div class="input-box">
+            <input type="tel" id="phone" placeholder="923001234567" required>
+            <button onclick="fetchNetwork()" id="btn">
+                <span id="btnText">Check Provider</span>
+            </button>
+        </div>
 
+        <div id="result" class="result-card hidden">
+            <img id="logo" src="" alt="logo">
+            <div class="details">
+                <h2 id="name"></h2>
+                <p id="type"></p>
+                <span class="badge">Active</span>
+            </div>
+        </div>
+        <p id="error" class="error hidden"></p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
